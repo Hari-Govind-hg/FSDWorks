@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Longest Word</title>
+    <script type="text/javascript">
+        function find(){
+            var st=document.getElementById("userinput").value;
+            var str=[];
+            var max=0;
+            str=st.split(" ");
+            var len=str.length;
+            l1=str[0].length;
+            var l2=0;
+            for(var i=0;i<len;i++)
+            {
+                l2=str[i].length;
+                if(l2>l1)
+                {
+                    max=i;
+                    l2=l1;
+                }
+                document.getElementById("op").innerHTML=str[max];
+            }
+        }
+    </script>
+</head>
+<body>
+        <h1>Longest Word</h1>
+        <input id="userinput" type="text" placeholder="Input User String"><br>
+        <button id="but" onclick="find()">Find!</button><br>
+        <h7 id="op"></h7><br>
+</body>
+</html>

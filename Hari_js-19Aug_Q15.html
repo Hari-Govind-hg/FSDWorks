@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Highlight</title>
+    <script type="text/javascript">
+        function high()
+        {
+           var v=document.getElementsByTagName("b");
+            for(i=0;i<v.length;i++)
+            {
+                console.log(v[i]);
+                v[i].style.backgroundColor="blue";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        Hello,I am <b>Hari Govind</b> and I am from <b>Kerala</b>
+    </p>
+    <button id="but" onclick="high()">Higlight!</button><br>
+</body>
+</html>

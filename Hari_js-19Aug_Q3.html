@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String in Alphabetical Order</title>
+    <script type="text/javascript">
+        function sorter(){
+        var str=document.getElementById("uinput").value;
+        var alpa=str.split("");
+        var sortalpa=alpa.sort().join("");
+        document.getElementById("op").innerHTML=sortalpa;
+        }
+    </script>
+</head>
+<body>
+    <h1>String Converter</h1>
+    <input id="uinput" type="text" placeholder="Input User String"><br>
+    <button id="but" onclick="sorter()">Sort the String!</button><br>
+    <h7 id="op"></h7><br>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check If-Uppercase</title>
+    <script type="text/javascript">
+        function test(){
+            var str=document.getElementById("userinput").value;
+            var i=document.getElementById("index").value;
+            var n=str.charAt(i);
+            if(n===n.toUpperCase()){
+                // document.getElementById("op").innerHTML="true";
+                alert("True");
+            }
+            else{
+                // document.getElementById("op").innerHTML="false";
+                alert("False");
+            }
+        }
+    </script>
+</head>
+<body>
+        <h1>Check if Uppercase</h1>
+        <input id="userinput" type="text" placeholder="Input User String"><br>
+        <input id="index" type="text" placeholder="Input index"><br>
+        <button id="but" onclick="test()">Find!</button><br>
+        <h7 id="op"></h7><br>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Count Substrings</title>
+    <script type="text/javascript">
+        function countoccur(){
+        var sub=document.getElementById("substring").value;
+        var n=new RegExp(sub,"g");
+       // n=n+'g';
+        console.log(n);
+        var temp=document.getElementById("userinput").value;
+        var count=(temp.match(n)).length;
+        document.getElementById("op").innerHTML=count;
+        } 
+
+    </script>
+</head>
+<body>
+        <h1>Count Occurrences</h1>
+        <input id="userinput" type="text" placeholder="Input User String"><br>
+        <input id="substring" type="text" placeholder="Input User Substring"><br>
+        <button id="but" onclick="countoccur()">Find!</button><br>
+        <h7 id="op"></h7><br>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time and Date</title>
+    <script type="text/javascript">
+    function date()
+    {   var day=new Date();
+        var weekdays=[];
+        weekdays[0]="Sunday";
+        weekdays[1]="Monday";
+        weekdays[2]="Teusday";
+        weekdays[3]="Wednesday";
+        weekdays[4]="Thursday";
+        weekdays[5]="Friday";
+        weekdays[6]="Saturday";
+        document.getElementById("one").innerHTML=weekdays[day.getDay()];
+        var ampm=(day.getHours>12)?"PM":"AM";
+        var hour=day.getHours();
+        hour=hour%12;
+        hour=hour?hour:12;
+        var time=hour+":"+day.getMinutes()+":"+day.getSeconds()+" "+ampm;
+        document.getElementById("two").innerHTML=time;
+    }
+    </script>
+</head>
+<body>
+    <h1>Time and Date</h1>
+    <p id="one">Today:</p>
+    <p id="two">Time Is:</p>
+    <button onclick="date()">Click</button>
+</body>
+</html>

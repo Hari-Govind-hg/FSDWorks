@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Match Tester (Assignment 1)</title>
+    <script type="text/javascript">
+    function check(){
+        var min=1; 
+        var max=15;  
+        var guessnum=document.getElementById("uinput").value;
+        var random = Math.floor(Math.random() * (+max - +min)) + +min; 
+        if(random==guessnum)
+        {
+            alert("Right On!");
+        }
+        else{
+            alert("Unlucky :(")
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>Random Match Tester</h1>
+    <p>
+        <input id="uinput" type="text" placeholder="Input User guess"><br>
+        <button type="button" onclick="check()">Check Now!</button>
+    </p>
+</body>
+</html>

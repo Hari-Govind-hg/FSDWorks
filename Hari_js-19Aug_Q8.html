@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find non-occuring</title>
+    <script type="text/javascript">
+        function find(){
+            var str=document.getElementById("userinput").value;
+            for(var i=0;i<str.length;i++){
+            var c=str.charAt(i);
+            var d=[]
+            if(str.indexOf(c)==i && str.indexOf(c,i+1)==-1){
+                // document.getElementById("op").innerHTML=c+"  ";
+                alert(c);
+                // d[i]=c;
+            }
+            // document.getElementById("op").innerHTML=d;
+            }
+        }
+    </script>
+</head>
+<body>
+        <h1>Count Non-Occurrences</h1>
+        <input id="userinput" type="text" placeholder="Input User String"><br>
+        <button id="but" onclick="find()">Find!</button><br>
+        <h7 id="op"></h7><br>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>First Letter Capitalize</title>
+    <script type="text/javascript">
+        function capitalize(){
+            var str=document.getElementById("uinput").value;
+            str=str.split(" ");
+            for(var i=0;i<str.length;i++)
+            {
+                str[i]=str[i][0].toUpperCase()+str[i].substr(1);
+            }
+            str=str.join(" ");
+            document.getElementById("op").innerHTML=str;
+            
+        }
+    </script>
+</head>
+<body>
+        <h1>String Converter</h1>
+        <input id="uinput" type="text" placeholder="Input User String"><br>
+        <button id="but" onclick="capitalize()">Capitalize!</button><br>
+        <h7 id="op"></h7><br>    
+</body>
+</html>

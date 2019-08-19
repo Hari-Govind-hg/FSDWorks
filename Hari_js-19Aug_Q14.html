@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Match Substring</title>
+    <script type="text/javascript">
+        function match(){
+        var str=document.getElementById("userinput").value;
+        var substr=document.getElementById("substring").value;
+        var lstr=str.length;
+        var lsub=substr.length;
+        var nsubstr=str.substring(0,lsub);
+        if(substr==nsubstr)
+        console.log("true");
+        else
+        console.log("false");
+        // for(var i=0;i<lsub;i++)
+        // {
+        //     if(str[i]==substr[i])
+        //     {document.getElementById("op").InnerHTML="true";}
+        //     else
+        //     {
+        //     document.getElementById("op").InnerHTML="false";
+        //     }
+        // }
+        }
+    </script>
+</head>
+<body>
+    <h1>Check if Uppercase</h1>
+        <input id="userinput" type="text" placeholder="Input User String"><br>
+        <input id="substring" type="text" placeholder="Input substring"><br>
+        <button id="but" onclick="match()">Find!</button><br>
+        <h7 id="op"></h7><br>
+</body>
+</html>
