@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function rem(){
+            // var ele=document.getElementById(inp).value;
+            var op=document.getElementById("list");
+            op.remove(op.selectedIndex);
+            // console.log(op[2]);
+            // for(var i=0;i<op.length;i++)
+            // {console.log(op[i]);
+            // if(op[i]===ele)
+            // {
+            //     op[i].remove();
+            // }
+            }
+        
+    </script>
+</head>
+<body>
+        <form>
+                <select id="list">
+                  <option>IBM</option>
+                  <option>Facebook</option>
+                  <option>Twitter</option>
+                  <option>Google</option>
+                </select>
+                <br><br>
+                <!-- <input type="text" id="inp" placeholder="Enter the number of text boxes"> -->
+                <input type="button" onclick="rem()" value="Remove">
+        </form>
+</body>
+</html>
