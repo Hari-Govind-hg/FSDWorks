@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>N Text Boxes</title>
+    <script>
+        function create(){
+            var a=parseInt(document.getElementById("inp").value);
+            var ch=document.getElementById("cre");
+            for(var i=0;i<a;i++)
+            {
+                var input=document.createElement("input");
+                ch.appendChild(input);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="inp" placeholder="Enter the number of text boxes">
+    <button onclick="create()">Click</button>
+    <div id="cre"></div>
+</body>
+</html>
