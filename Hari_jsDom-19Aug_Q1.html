@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time and Date</title>
+    <script type="text/javascript">
+    function date()
+    {   var x=new Date(document.lastModified);
+        document.getElementById("upload").innerHTML=x;
+    }
+    </script>
+</head>
+<body>
+    <p id="upload"></p>
+    <button onclick="date()">Click Here</button>
+</body>
+</html>

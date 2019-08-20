@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Href attribute value</title>
+</head>
+<body>
+    <a href="www.google.com">Google</a>
+    <a href="www.yahoo.com">Yahoo</a>
+    <a href="www.ibm.com">IBM</a>
+    <button onclick="disp()">Get Last href attribute</button>
+    <h6 id="txt"></h6>
+
+    <script>
+            function disp(){
+                var a=document.getElementsByTagName("a");
+                var hr=a[a.length-1].getAttribute("href");
+                document.getElementById("txt").innerHTML=hr;
+            }
+        </script>
+</body>
+</html>

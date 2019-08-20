@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Replace Body</title>
+</head>
+<body>
+    <p id="tex">Hello Welcome to my website</p>
+    <input type="text" id="userinput" placeholder="Enter replacing text here">
+    <button onclick="rep()">Click to change</button>
+
+
+    <script type="text/javascript">
+        function rep()
+        {
+            var rep=document.getElementById("userinput").value;
+            document.getElementById("tex").innerText=rep;
+        }
+    </script>
+</body>
+</html>
